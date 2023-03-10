@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="fontawesome-free-6.3.0-web/fontawesome-free-6.3.0-web/css/all.css">
+    <style>
+        .play {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            border-radius: 50%;
+            margin: 250px auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            position: relative;
+            z-index: 0;
+        }
+        
+        .eff {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100px;
+            height: 100px;
+            background-color: lightblue;
+            border-radius: 50%;
+            z-index: -1;
+            animation-name: dev;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+            opacity: 0;
+        }
+        
+        @keyframes dev {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1.4);
+                opacity: 0.20;
+                transition: 2s;
+            }
+        }
+        
+        @keyframes dev {
+            from {
+                transform: scale(1);
+                opacity: 1;
+            }
+            to {
+                transform: scale(1.8);
+                opacity: 0.20;
+                background-color: brown;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="play">
+        <i class="fa-solid fa-play"></i>
+        <span class="eff"></span>
+        <span class="eff"></span>
+        <span class="eff"></span>
+
+    </div>
+</body>
+
+</html>
